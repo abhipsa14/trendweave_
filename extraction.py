@@ -6,8 +6,6 @@ import pytesseract
 from tqdm import tqdm
 import cv2
 import exifread
-import ffmpeg
-import whisper
 import json
 
 # For video scene detection:
@@ -23,7 +21,7 @@ video_folder = r""  # Leave blank or set to "" if not available yet
 output_folder = "extracted_data"
 os.makedirs(output_folder, exist_ok=True)
 
-# --- PDF Extraction (images in page folders + single OCR text file + metadata) ---
+# --- PDF Extraction (images in page folders + single OCR text file + all image metadata in one JSON) ---
 if os.path.isdir(pdf_folder):
     pdf_files = [f for f in os.listdir(pdf_folder) if f.lower().endswith(".pdf")]
     for pdf_file in tqdm(pdf_files, desc="PDFs processed"):
@@ -33,33 +31,43 @@ if os.path.isdir(pdf_folder):
             pdf_output_dir = os.path.join(output_folder, pdf_name)
             os.makedirs(pdf_output_dir, exist_ok=True)
 
-            # 0. Extract and save PDF metadata as JSON
-            metadata_path = os.path.join(pdf_output_dir, f"{pdf_name}_metadata.json")
-            if not os.path.exists(metadata_path):
-                doc = fitz.open(pdf_path)
-                metadata = doc.metadata
-                with open(metadata_path, "w", encoding="utf-8") as meta_file:
-                    json.dump(metadata, meta_file, indent=2)
-                doc.close()
-            else:
-                print(f"Metadata for {pdf_file} already exists, skipping.")
-
             # 1. Extract images from PDF, saving each page's images in its own folder
             doc = fitz.open(pdf_path)
+            image_metadata_list = []
             for page_num in range(len(doc)):
                 page_folder = os.path.join(pdf_output_dir, f"page_{page_num+1}")
                 os.makedirs(page_folder, exist_ok=True)
-                # Only extract images if at least one doesn't exist
-                images = page = doc.load_page(page_num).get_images(full=True)
+                images = doc.load_page(page_num).get_images(full=True)
                 for img_index, img in enumerate(images):
-                    image_ext = doc.extract_image(img[0])["ext"]
+                    xref = img[0]
+                    base_image = doc.extract_image(xref)
+                    image_bytes = base_image["image"]
+                    image_ext = base_image["ext"]
                     image_filename = os.path.join(page_folder, f"img_{img_index+1}.{image_ext}")
+                    # Only extract if not already present
                     if not os.path.exists(image_filename):
-                        base_image = doc.extract_image(img[0])
-                        image_bytes = base_image["image"]
                         with open(image_filename, "wb") as img_file:
                             img_file.write(image_bytes)
+                    # Extract EXIF metadata if possible
+                    tags_dict = {}
+                    try:
+                        with open(image_filename, 'rb') as imgf:
+                            tags = exifread.process_file(imgf)
+                            tags_dict = {str(tag): str(tags[tag]) for tag in tags.keys()}
+                    except Exception:
+                        pass
+                    image_metadata_list.append({
+                        "page": page_num + 1,
+                        "image_index": img_index + 1,
+                        "image_filename": os.path.relpath(image_filename, pdf_output_dir),
+                        "exif_metadata": tags_dict
+                    })
             doc.close()
+            # Save all image metadata for this PDF in one JSON file
+            all_image_meta_path = os.path.join(pdf_output_dir, "all_images_metadata.json")
+            if not os.path.exists(all_image_meta_path):
+                with open(all_image_meta_path, "w", encoding="utf-8") as meta_file:
+                    json.dump(image_metadata_list, meta_file, indent=2)
 
             # 2. OCR text extraction: accumulate all text and save once
             text_file = os.path.join(pdf_output_dir, f"{pdf_name}_ocr.txt")
