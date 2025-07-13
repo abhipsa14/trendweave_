@@ -1,0 +1,9 @@
+pymupdf==1.23.25
+pdf2image==1.17.0
+pillow==10.3.0
+pytesseract==0.3.10
+exifread==3.0.0
+opencv-python==4.9.0.80
+ffmpeg-python==0.2.0
+openai-whisper==20231117
+tqdm==4.66.4
