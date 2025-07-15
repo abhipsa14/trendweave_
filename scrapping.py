@@ -49,9 +49,6 @@ class PDFExtractor:
                 page_text = page.get_text()
                 
                 if page_text.strip():  # Only add if there's actual text
-                    all_text += f"\n{'='*50}\n"
-                    all_text += f"PAGE {page_num + 1}\n"
-                    all_text += f"{'='*50}\n"
                     all_text += page_text
             
             doc.close()
