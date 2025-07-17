@@ -1,0 +1,31 @@
+# transformers
+# PyMuPDF
+# pdf2image
+# Pillow
+# pytesseract
+# tqdm
+# opencv-python
+# ExifRead
+# scenedetect
+# opencv-python
+# ffmpeg-python
+# openai-whisper
+# tqdm
+pandas
+numpy
+spacy
+nltk
+textblob
+transformers
+torch           # Required for Hugging Face models
+scikit-learn
+rake-nltk
+keybert
+matplotlib
+seaborn
+plotly
+wordcloud
+bertopic
+sentence-transformers
+umap-learn
+hdbscan

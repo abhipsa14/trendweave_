@@ -1,0 +1,454 @@
+FASHION TREND ANALYSIS REPORT
+================================================================================
+Generated on: 2025-07-16 09:51:21
+================================================================================
+
+EXECUTIVE SUMMARY
+================================================================================
+
+📊 DATA OVERVIEW
+   • Total documents analyzed: 117
+   • Total words processed: 149,131
+   • Average document length: 8700 characters
+
+📁 CATEGORY DISTRIBUTION
+   • Mens: 96 documents (82.1%)
+   • Catwalk: 18 documents (15.4%)
+   • Collection: 2 documents (1.7%)
+   • General: 1 documents (0.9%)
+
+🗓️ SEASON DISTRIBUTION
+   • AW_25_26: 59 documents (50.4%)
+   • AW_24_25: 58 documents (49.6%)
+
+💭 OVERALL SENTIMENT
+   • Average sentiment score: 0.099
+   • Sentiment distribution:
+     - Neutral: 62 documents
+     - Positive: 55 documents
+
+🔮 KEY FORECASTS
+   • Overall market sentiment: Neutral
+   • Innovation level: Low
+   • Market confidence: 29.9%
+
+🤖 MODEL PERFORMANCE
+   • Sentiment Trend: 100.0% accuracy
+   • Season Trend: 70.8% accuracy
+   • Popularity Trend: 95.8% accuracy
+   • Innovation Trend: 91.7% accuracy
+
+
+SENTIMENT ANALYSIS
+================================================================================
+
+📈 OVERALL SENTIMENT METRICS
+   • Average Polarity (TextBlob): 0.099
+   • Average Compound Score (VADER): 0.997
+
+📊 SENTIMENT DISTRIBUTION
+   TextBlob Analysis:
+     • Neutral: 62 documents
+     • Positive: 55 documents
+
+   VADER Analysis:
+     • Positive: 117 documents
+
+🏆 EXTREME SENTIMENT DOCUMENTS
+   • Most positive document: ID 15 (score: 0.207)
+   • Most negative document: ID 17 (score: -0.023)
+
+🏷️ SENTIMENT BY CATEGORY
+   Catwalk:
+     • Documents: 18
+     • Avg. Polarity: 0.075
+     • Avg. VADER: 0.998
+
+   Mens:
+     • Documents: 96
+     • Avg. Polarity: 0.104
+     • Avg. VADER: 0.996
+
+   General:
+     • Documents: 1
+     • Avg. Polarity: 0.091
+     • Avg. VADER: 0.999
+
+   Collection:
+     • Documents: 2
+     • Avg. Polarity: 0.099
+     • Avg. VADER: 0.998
+
+👗 FASHION-SPECIFIC SENTIMENT INSIGHTS
+   Positive Trends:
+     • innovative: Positive (0.130)
+     • trendy: Positive (0.204)
+     • stylish: Positive (0.115)
+
+   Negative Trends:
+     • declining: Neutral (0.079)
+     • boring: Neutral (0.085)
+     • weak: Neutral (0.082)
+
+   Colors:
+     • black: Neutral (0.091)
+     • white: Neutral (0.099)
+     • red: Neutral (0.099)
+
+   Materials:
+     • cotton: Neutral (0.094)
+     • silk: Positive (0.102)
+     • wool: Positive (0.102)
+
+   Styles:
+     • casual: Neutral (0.095)
+     • formal: Positive (0.108)
+     • sporty: Neutral (0.073)
+
+
+TOPIC MODELING
+================================================================================
+
+📋 TOPIC OVERVIEW
+   • Total topics identified: 3
+   • Documents processed: 117
+
+🔝 TOP TOPICS
+   Topic 0: colour, new, milan, london, catwalk
+     • Documents: 14
+
+   Topic 1: ppt, catwalk, key, mix, yoy
+     • Documents: 16
+
+   Topic 2: 
+     • Documents: 87
+
+🏷️ TOPIC TRENDS BY CATEGORY
+   Catwalk:
+     • Documents: 18
+     • Dominant topics: [1, -1]
+
+   Mens:
+     • Documents: 96
+     • Dominant topics: [1, 0, -1]
+
+   General:
+     • Documents: 1
+     • Dominant topics: [1]
+
+   Collection:
+     • Documents: 2
+     • Dominant topics: [1]
+
+🗓️ TOPIC TRENDS BY SEASON
+   AW_25_26:
+     • Documents: 59
+     • Dominant topics: [1, 0, -1]
+
+   AW_24_25:
+     • Documents: 58
+     • Dominant topics: [1, 0, -1]
+
+
+KEYWORD ANALYSIS
+================================================================================
+
+🏷️ KEYWORD TRENDS BY CATEGORY
+   Catwalk:
+     • Documents: 18
+     • Unique RAKE keywords: 163
+     • Unique KeyBERT keywords: 163
+     • Top RAKE keywords:
+       - classify images wgsn catwalks colour data uses ai: 6
+       - category mix (% mix ): proportion: 3
+       - test proenza schouler theory twp khaite altuzarra 6 proof points feel appeal: 2
+       - test marina moscone bally alexander mcqueen fendi givenchy 13 proof points: 2
+       - new design fendi alejandra alonso rojas 10 proof points alongside: 2
+
+   Mens:
+     • Documents: 96
+     • Unique RAKE keywords: 932
+     • Unique KeyBERT keywords: 835
+     • Top RAKE keywords:
+       - h … woven scarf bucket knitted scarf 0 5 10: 4
+       - used hashtags head: 3
+       - black brown grey neutral blue green red purple: 2
+       - black brown neutral grey blue green red orange: 2
+       - black brown grey neutral blue green red pink: 2
+
+   General:
+     • Documents: 1
+     • Unique RAKE keywords: 10
+     • Unique KeyBERT keywords: 10
+     • Top RAKE keywords:
+       - 25 matchingset widelegtrouser denimondenim sheers leather elegantcomfort addonknits topcoat miniskirt notsoclassic softutility layering gelatopastels berrytones sepiatones underwearouterwear outofretirement softvolume sheerdress statementbelt rotate birger christensen wood wood stamm 1 key trends: 1
+       - mark kenly domino tan tg botanical aeron gestuz henrik vibskov 2 colour: 1
+       - baum und pferdgarten forza collective lovechild 1979 stamm remain 5 key items: 1
+       - helmstedt baum und pferdgarten ganni lovechild 1979 forza collective 7 denim: 1
+       - paolina russo baum und pferdgarten ganni gestuz saks potts 6 footwear: 1
+
+   Collection:
+     • Documents: 2
+     • Unique RAKE keywords: 20
+     • Unique KeyBERT keywords: 20
+     • Top RAKE keywords:
+       - petite parade raspberry plum carbon soldier anja schwerbrock simonetta 9 sheer layers feminine bows tinted transparency tulle ruffles metallic embellishment: 1
+       - hello simone lialea oxox club carbon soldier hello simone 6 pocket detailing contrast side seams sweatpant update cosy textures bold: 1
+       - remix girls oxox club creamie kids minymo 11 hyper prep plaid heritage checks quilted constructions lightweight layers: 1
+       - remix girls paade mode 8 utility denim whimsical embroidery printed corduroy classic railroad stripe unexpected fabrications: 1
+       - way monday please kids paz rodriguez 4 hairy texture colourful plaid: 1
+
+🗓️ KEYWORD TRENDS BY SEASON
+   AW_25_26:
+     • Documents: 59
+     • Top keywords:
+       - used hashtags head: 3
+       - human analysts definitions top colour code %:: 3
+       - category mix (% mix ): proportion: 3
+       - black brown grey neutral blue green red purple: 2
+       - black brown neutral grey blue green red orange: 2
+
+   AW_24_25:
+     • Documents: 58
+     • Top keywords:
+       - classify images wgsn catwalks colour data uses ai: 6
+       - h … woven scarf bucket knitted scarf 0 5 10: 4
+       - track parka 0 10 20 30: 2
+       - puff … overcoats shirt … bomber: 2
+       - khaki walking shorts cargo trousers /… sports: 2
+
+👗 FASHION-SPECIFIC KEYWORD INSIGHTS
+   Colors:
+     • red: 91 occurrences
+     • black: 31 occurrences
+     • brown: 28 occurrences
+     • blue: 23 occurrences
+     • white: 19 occurrences
+
+   Materials:
+     • denim: 37 occurrences
+     • leather: 36 occurrences
+     • silk: 3 occurrences
+     • wool: 1 occurrences
+     • synthetic: 1 occurrences
+
+   Styles:
+     • elegant: 24 occurrences
+     • modern: 13 occurrences
+     • casual: 10 occurrences
+     • vintage: 6 occurrences
+     • formal: 3 occurrences
+
+   Garments:
+     • dress: 78 occurrences
+     • coat: 40 occurrences
+     • skirt: 31 occurrences
+     • suit: 27 occurrences
+     • jacket: 23 occurrences
+
+   Accessories:
+     • bag: 20 occurrences
+     • scarf: 9 occurrences
+     • belt: 7 occurrences
+     • hat: 3 occurrences
+     • shoes: 2 occurrences
+
+   Trends:
+     • oversized: 18 occurrences
+     • sustainable: 6 occurrences
+     • vintage: 6 occurrences
+     • cropped: 5 occurrences
+     • minimalist: 3 occurrences
+
+
+NAMED ENTITY RECOGNITION
+================================================================================
+
+🏷️ BRAND ANALYSIS
+   • Total brand mentions: 589
+   • Unique brands: 37
+   • Top brands:
+     - burberry: 39 mentions
+     - louis vuitton: 37 mentions
+     - gucci: 36 mentions
+     - fendi: 33 mentions
+     - dior: 31 mentions
+     - acne studios: 31 mentions
+     - armani: 30 mentions
+     - prada: 25 mentions
+     - hermès: 25 mentions
+     - stella mccartney: 25 mentions
+
+🎨 COLOR TRENDS
+   • Total color mentions: 311
+   • Unique colors: 24
+   • Top colors:
+     - black: 48 mentions
+     - grey: 33 mentions
+     - white: 32 mentions
+     - blue: 27 mentions
+     - green: 24 mentions
+     - red: 23 mentions
+     - brown: 19 mentions
+     - yellow: 17 mentions
+     - silver: 16 mentions
+     - pink: 14 mentions
+
+🧵 MATERIAL TRENDS
+   • Total material mentions: 559
+   • Unique materials: 31
+   • Top materials:
+     - leather: 72 mentions
+     - denim: 44 mentions
+     - knit: 43 mentions
+     - jersey: 42 mentions
+     - lace: 41 mentions
+     - woven: 39 mentions
+     - velvet: 34 mentions
+     - satin: 30 mentions
+     - recycled: 26 mentions
+     - sustainable: 26 mentions
+
+🏷️ ENTITY TRENDS BY CATEGORY
+   Catwalk:
+     • Documents: 18
+     • Total entities: 4081
+     • Top entities:
+       - YoY: 218
+       - 0: 86
+       - WGSN: 65
+
+   Mens:
+     • Documents: 96
+     • Total entities: 15026
+     • Top entities:
+       - TCX: 342
+       - #: 329
+       - YoY: 282
+
+   General:
+     • Documents: 1
+     • Total entities: 167
+     • Top entities:
+       - Copenhagen: 15
+       - #: 6
+       - A/W 24/25: 4
+
+   Collection:
+     • Documents: 2
+     • Total entities: 180
+     • Top entities:
+       - US: 8
+       - A/W 24/25: 6
+       - UK: 4
+
+
+PREDICTIONS & FORECASTING
+================================================================================
+
+🤖 MODEL PERFORMANCE
+   Sentiment Trend:
+     • random_forest: 100.0% accuracy (CV: 99.2% ± 1.7%)
+     • gradient_boosting: 100.0% accuracy (CV: 100.0% ± 0.0%)
+     • logistic_regression: 62.5% accuracy (CV: 90.5% ± 8.5%)
+
+   Season Trend:
+     • random_forest: 70.8% accuracy (CV: 48.8% ± 16.2%)
+     • gradient_boosting: 66.7% accuracy (CV: 46.3% ± 20.4%)
+     • logistic_regression: 70.8% accuracy (CV: 37.6% ± 15.9%)
+
+   Popularity Trend:
+     • random_forest: 91.7% accuracy (CV: 94.0% ± 2.1%)
+     • gradient_boosting: 95.8% accuracy (CV: 96.6% ± 4.2%)
+     • logistic_regression: 91.7% accuracy (CV: 94.0% ± 2.1%)
+
+   Innovation Trend:
+     • random_forest: 79.2% accuracy (CV: 73.5% ± 8.8%)
+     • gradient_boosting: 87.5% accuracy (CV: 91.3% ± 7.3%)
+     • logistic_regression: 91.7% accuracy (CV: 79.5% ± 5.2%)
+
+📊 OVERALL TREND PREDICTIONS
+   Sentiment Trend:
+     • Neutral: 62 documents (53.0%)
+     • Positive: 55 documents (47.0%)
+
+   Season Trend:
+     • Emerging: 60 documents (51.3%)
+     • Current: 57 documents (48.7%)
+
+   Popularity Trend:
+     • Low: 110 documents (94.0%)
+     • Medium: 4 documents (3.4%)
+     • High: 3 documents (2.6%)
+
+   Innovation Trend:
+     • Moderate: 65 documents (55.6%)
+     • Traditional: 37 documents (31.6%)
+     • Innovative: 15 documents (12.8%)
+
+🏷️ CATEGORY FORECASTS
+   Catwalk:
+     • Forecast: Declining
+     • Trend score: 14.8%
+     • Confidence: 100.0%
+
+   Mens:
+     • Forecast: Stable
+     • Trend score: 21.9%
+     • Confidence: 100.0%
+
+   General:
+     • Forecast: Stable
+     • Trend score: 33.3%
+     • Confidence: 10.0%
+
+   Collection:
+     • Forecast: Declining
+     • Trend score: 16.7%
+     • Confidence: 20.0%
+
+🌍 MARKET FORECAST
+   • Overall sentiment: Neutral
+   • Innovation level: Low
+   • Market confidence: 29.9%
+
+
+RECOMMENDATIONS
+================================================================================
+
+🎯 STRATEGIC RECOMMENDATIONS
+   • Low innovation detected - opportunity for market disruption
+
+🏷️ CATEGORY-SPECIFIC RECOMMENDATIONS
+   Catwalk:
+     • Declining trend - consider repositioning or exit strategy
+
+   Mens:
+     • Stable market - focus on efficiency and quality
+
+   General:
+     • Stable market - focus on efficiency and quality
+
+   Collection:
+     • Declining trend - consider repositioning or exit strategy
+
+🎨 COLOR TREND RECOMMENDATIONS
+   • Top trending colors to focus on:
+     - Black: 48 mentions
+     - Grey: 33 mentions
+     - White: 32 mentions
+     - Blue: 27 mentions
+     - Green: 24 mentions
+
+🏷️ BRAND POSITIONING INSIGHTS
+   • Most mentioned brands (competitive landscape):
+     - Burberry: 39 mentions
+     - Louis Vuitton: 37 mentions
+     - Gucci: 36 mentions
+     - Fendi: 33 mentions
+     - Dior: 31 mentions
+
+
+================================================================================
+END OF REPORT
+================================================================================
