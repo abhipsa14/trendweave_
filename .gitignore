@@ -1,5 +1,48 @@
+# Virtual Environment
 .venv/
+venv/
+env/
+
+# Data directories
 data/
-__pycache__/
-fine_tunde_model/
 training_data/
+extracted_content/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Model files (too large for GitHub)
+fine_tuned_models/
+fine_tunde_model/
+models/*.pkl
+models/*.pth
+*.safetensors
+*.bin
+*.pt
+
+# Analysis results
+analysis_results/
+*.png
+*.jpg
+*.jpeg
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
